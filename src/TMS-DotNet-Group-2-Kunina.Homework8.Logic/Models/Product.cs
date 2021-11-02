@@ -1,7 +1,7 @@
 ﻿using System;
-using TMS_DotNet_Group_2_Kunina.Homework8.Data.Models.Enums;
+using TMS_DotNet_Group_2_Kunina.Homework8.Data.Enums;
 
-namespace TMS_DotNet_Group_2_Kunina.Homework8.Data.Models
+namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Models
 {
     public class Product
     {

@@ -1,8 +1,7 @@
 ﻿using System;
-using TMS_DotNet_Group_2_Kunina.Homework8.Data;
-using TMS_DotNet_Group_2_Kunina.Homework8.Logic;
 using TMS_DotNet_Group_2_Kunina.Homework8.Logic.Interfaces;
 using TMS_DotNet_Group_2_Kunina.Homework8.Logic.Managers;
+using TMS_DotNet_Group_2_Kunina.Homework8.Logic.Models;
 
 namespace TMS_DotNet_Group_2_Kunina.Homework8.UI
 {
@@ -19,7 +18,7 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.UI
             string inputСustomers = Console.ReadLine();
             CheckInputValue(inputCashDesks, out int numberCustomers);
 
-            IShopManager shopManager = new ShopManager();
+            ShopManager<Cashbox, Customer> shopManager = new ShopManager<Cashbox, Customer>();
             shopManager.Run(numberCustomers, numberCashDesks);
 
         }

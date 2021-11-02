@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
-using TMS_DotNet_Group_2_Kunina.Homework8.Data.Models;
-using TMS_DotNet_Group_2_Kunina.Homework8.Data.Models.Enums;
+using TMS_DotNet_Group_2_Kunina.Homework8.Logic.Models;
+using TMS_DotNet_Group_2_Kunina.Homework8.Data.Enums;
 using TMS_DotNet_Group_2_Kunina.Homework8.Logic.Interfaces;
 
 namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Managers
 {
-    public class ShopManager : IShopManager
+    public class ShopManager<Cashbox, Customer>
+        where Cashbox : ICashbox, new()
+        where Customer : ICustomer, new()    
     {
         public static Dictionary<Products, Product> products = new Dictionary<Products, Product>();
         private List<Customer> customers = new List<Customer>();
@@ -26,18 +28,6 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Managers
             products.Add(Products.orange, new Product(Products.milk, 60.0M, Priorities.medium));
             products.Add(Products.meat, new Product(Products.meat, 100.0M, Priorities.high));
             products.Add(Products.cake, new Product(Products.milk, 50.0M, Priorities.medium));
-
-            //cashDesks.Add(new Cashbox(1, 1000));
-            //cashDesks.Add(new Cashbox(2, 1800));
-            //cashDesks.Add(new Cashbox(3, 3500));
-            //cashDesks.Add(new Cashbox(4, 1500));
-            //cashDesks.Add(new Cashbox(5, 2000));
-
-            //customers.Add(new Customer(products, 1));
-            //customers.Add(new Customer(products, 2));
-            //customers.Add(new Customer(products, 3));
-            //customers.Add(new Customer(products, 4));
-            //customers.Add(new Customer(products, 5));
         }
 
         public void Run(int numberCustomers, int numberCashbox)
@@ -45,12 +35,22 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Managers
             for (int i = 0; i < numberCashbox; i++)
             {
                 Random random = new Random();
-                cashboxes.Add(new Cashbox(i, random.Next(1000, 3000)));
+                
+                cashboxes.Add(new Cashbox() {
+                    CashBoxIndex = i,
+                    IsWorking = random.Next(0, 5) > 2
+                });
             }
 
             for (int i = 0; i < numberCustomers; i++)
             {
-                customers.Add(new Customer(products, i));
+                Random random = new Random();
+
+                customers.Add(new Customer() {
+                    CustomerID = i,
+                    Cash = random.Next(50, 300)
+                });
+                customers[i].CreatProductList(products);
             }
 
             foreach (Cashbox cashbox in cashboxes)

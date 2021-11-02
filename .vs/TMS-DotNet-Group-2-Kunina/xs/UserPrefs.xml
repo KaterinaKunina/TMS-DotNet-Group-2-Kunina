@@ -1,20 +1,23 @@
 ﻿<Properties StartupConfiguration="{D2AA69E0-76AE-4FA7-ACCC-D3D5E9FB7707}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/TMS-DotNet-Group-2-Kunina.Homework8.UI/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Managers/ShopManager.cs">
     <Files>
-      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Data/Models/Customer.cs" Line="11" Column="31" />
-      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Interfaces/IShopManager.cs" Line="1" Column="1" />
-      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Managers/ShopManager.cs" Line="28" Column="95" />
-      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.UI/Program.cs" Line="20" Column="53" />
+      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Interfaces/ICustomer.cs" Line="16" Column="6" />
+      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Managers/ShopManager.cs" Line="59" Column="37" />
+      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.UI/Program.cs" Line="25" Column="1" />
+      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Models/Cashbox.cs" Line="26" Column="46" />
+      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Models/Customer.cs" Line="39" Column="54" />
+      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Interfaces/ICashbox.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TMS-DotNet-Group-2-Kunina" expanded="True" selected="True">
-            <Node name="TMS-DotNet-Group-2-Kunina.Homework8.Data" expanded="True">
-              <Node name="Models" expanded="True" />
-            </Node>
+          <Node name="TMS-DotNet-Group-2-Kunina" expanded="True">
             <Node name="TMS-DotNet-Group-2-Kunina.Homework8.Logic" expanded="True">
-              <Node name="Managers" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Managers" expanded="True">
+                <Node name="ShopManager.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
             </Node>
             <Node name="TMS-DotNet-Group-2-Kunina.Homework8.UI" expanded="True" />
           </Node>

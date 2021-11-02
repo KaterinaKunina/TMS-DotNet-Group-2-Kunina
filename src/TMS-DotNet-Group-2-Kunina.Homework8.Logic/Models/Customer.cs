@@ -1,33 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using TMS_DotNet_Group_2_Kunina.Homework8.Data.Models.Enums;
+using TMS_DotNet_Group_2_Kunina.Homework8.Data.Enums;
+using TMS_DotNet_Group_2_Kunina.Homework8.Logic.Interfaces;
 
-namespace TMS_DotNet_Group_2_Kunina.Homework8.Data.Models
+namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Models
 {
-    public class Customer
+    public class Customer : ICustomer
     {
-        private int _customerID;
-        private decimal _cash;
-        private List<Product> _cart;
-        List<Product> productsList = new();
+        private List<Product> _cart = new();
+        private List<Product> productsList = new();
 
-        public Customer(Dictionary<Products, Product> productDictionary, int customerID)
-        {
-            _customerID = customerID;
-            Random random = new Random();
-            _cash = random.Next(10, 300);
-            CreatProductList(productDictionary);
-            BuyProducts();
-        }
+        public int CustomerID { get; set; }
 
-        public int CustomerID => _customerID;
-
-        public decimal Cash => _cash;
+        public decimal Cash { get; set; }
 
         public List<Product> Cart => _cart;
 
-        private void CreatProductList(Dictionary<Products, Product> productDictionary)
+        public void CreatProductList(Dictionary<Products, Product> productDictionary)
         {
             Random random = new Random();
             int numberProductsNeeded = random.Next(1, 10);
@@ -37,6 +27,7 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Data.Models
             {
                 int produсtIndex = random.Next(0, numberProductsInListing - 1);
                 productsList.Add(productDictionary[(Products)produсtIndex]);
+                Console.WriteLine($"Add product to list needed - {productDictionary[(Products)produсtIndex].Name} for cutomer {CustomerID}");
             }
         }
 
@@ -45,13 +36,17 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Data.Models
             var sortedProductList = productsList.OrderBy(sort => sort.Priority);
             decimal costProducts = 0.0M;
 
+            Console.WriteLine($"Customer cash - {Cash}");
             foreach (var product in sortedProductList)
             {
-                if (costProducts + product.Price <= _cash)
+                if (costProducts + product.Price <= Cash)
                 {
+                    Console.WriteLine($"Buy product - {product.Name}, {product.Price}, {product.Priority}");
                     _cart.Add(product);
                     costProducts += product.Price;
+                    Console.WriteLine($"Cart price - {costProducts}");
                 }
+                
             }
         }
     }

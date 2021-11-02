@@ -1,5 +1,4 @@
-﻿using System;
-namespace TMS_DotNet_Group_2_Kunina.Homework8.Data.Models.Enums
+﻿namespace TMS_DotNet_Group_2_Kunina.Homework8.Data.Enums
 {
     public enum Priorities
     {
