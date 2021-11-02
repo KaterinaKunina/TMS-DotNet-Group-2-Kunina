@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ii3G4L1lBSCGLd/Uf5+wEKHgeiNNo4TwBS4kRF19On98GDb/1GXstbuMJM1ge5kCuKL2k9fzBOu/+9tcjyGiNw==",
+  "success": true,
+  "projectFilePath": "/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Data/TMS-DotNet-Group-2-Kunina.Homework8.Data.csproj",
+  "expectedPackageFiles": [
+    "/Users/dmitrijnaumenko/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.9/microsoft.netcore.app.host.osx-x64.5.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

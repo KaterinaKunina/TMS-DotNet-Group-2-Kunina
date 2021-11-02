@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TMS-DotNet-Group-2-Kunina.Homework8.UI/1.0.0": {
+        "dependencies": {
+          "TMS-DotNet-Group-2-Kunina.Homework8.Data": "1.0.0",
+          "TMS-DotNet-Group-2-Kunina.Homework8.Logic": "1.0.0"
+        },
+        "runtime": {
+          "TMS-DotNet-Group-2-Kunina.Homework8.UI.dll": {}
+        }
+      },
+      "TMS-DotNet-Group-2-Kunina.Homework8.Data/1.0.0": {
+        "runtime": {
+          "TMS-DotNet-Group-2-Kunina.Homework8.Data.dll": {}
+        }
+      },
+      "TMS-DotNet-Group-2-Kunina.Homework8.Logic/1.0.0": {
+        "dependencies": {
+          "TMS-DotNet-Group-2-Kunina.Homework8.Data": "1.0.0"
+        },
+        "runtime": {
+          "TMS-DotNet-Group-2-Kunina.Homework8.Logic.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TMS-DotNet-Group-2-Kunina.Homework8.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TMS-DotNet-Group-2-Kunina.Homework8.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TMS-DotNet-Group-2-Kunina.Homework8.Logic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
