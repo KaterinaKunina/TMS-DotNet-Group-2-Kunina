@@ -10,6 +10,8 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Interfaces
 
         public decimal Cash { get; set; }
 
+        public List<Product> Cart { get; set; }
+
         public void CreatProductList(Dictionary<Products, Product> products);
 
         public void BuyProducts();

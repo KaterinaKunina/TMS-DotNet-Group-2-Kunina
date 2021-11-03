@@ -15,7 +15,7 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Models
 
         public decimal Cash { get; set; }
 
-        public List<Product> Cart => _cart;
+        public List<Product> Cart { get { return _cart; } set { } }
 
         public void CreatProductList(Dictionary<Products, Product> productDictionary)
         {
@@ -23,30 +23,31 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Models
             int numberProductsNeeded = random.Next(1, 10);
             int numberProductsInListing = Enum.GetNames(typeof(Products)).Length;
 
+            Console.WriteLine(new String('=', 50));
+
             for (int i = 0; i < numberProductsNeeded; i++)
             {
                 int produсtIndex = random.Next(0, numberProductsInListing - 1);
                 productsList.Add(productDictionary[(Products)produсtIndex]);
-                Console.WriteLine($"Add product to list needed - {productDictionary[(Products)produсtIndex].Name} for cutomer {CustomerID}");
+                Console.WriteLine($"Add a {productDictionary[(Products)produсtIndex].Name} to the list of required - for cutomer {CustomerID}");
             }
+
+            Console.WriteLine(new String('=', 50));
         }
 
         public void BuyProducts()
         {
             var sortedProductList = productsList.OrderBy(sort => sort.Priority);
-            decimal costProducts = 0.0M;
+            decimal costProducts = default;
 
-            Console.WriteLine($"Customer cash - {Cash}");
             foreach (var product in sortedProductList)
             {
                 if (costProducts + product.Price <= Cash)
                 {
-                    Console.WriteLine($"Buy product - {product.Name}, {product.Price}, {product.Priority}");
+                    Console.WriteLine($"Customer {CustomerID}. Buy product - {product.Name}, {product.Price}, {product.Priority}");
                     _cart.Add(product);
                     costProducts += product.Price;
-                    Console.WriteLine($"Cart price - {costProducts}");
                 }
-                
             }
         }
     }

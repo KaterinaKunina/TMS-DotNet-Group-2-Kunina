@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
 using TMS_DotNet_Group_2_Kunina.Homework8.Logic.Models;
 using TMS_DotNet_Group_2_Kunina.Homework8.Data.Enums;
 using TMS_DotNet_Group_2_Kunina.Homework8.Logic.Interfaces;
+using System.Linq;
 
 namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Managers
 {
@@ -30,39 +32,80 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Managers
             products.Add(Products.cake, new Product(Products.milk, 50.0M, Priorities.medium));
         }
 
-        public void Run(int numberCustomers, int numberCashbox)
+        public void Run(int numberCustomers, int numberCashboxes)
         {
-            for (int i = 0; i < numberCashbox; i++)
+            for (int i = 0; i < numberCashboxes; i++)
             {
                 Random random = new Random();
-                
-                cashboxes.Add(new Cashbox() {
+                cashboxes.Add(new Cashbox()
+                {
                     CashBoxIndex = i,
-                    IsWorking = random.Next(0, 5) > 2
+                    IsWorking = random.Next(0, 10) > 2
                 });
+
+                if (cashboxes[i].IsWorking)
+                {
+                    Console.WriteLine($"Cashbox {i} is working");
+                }
+                else
+                {
+                    Console.WriteLine($"Cashbox {i} is not working");
+                }
             }
 
             for (int i = 0; i < numberCustomers; i++)
             {
                 Random random = new Random();
-
-                customers.Add(new Customer() {
+                customers.Add(new Customer()
+                {
                     CustomerID = i,
                     Cash = random.Next(50, 300)
                 });
+
+                Console.WriteLine();
+                Console.WriteLine($"Customer {customers[i].CustomerID} has {customers[i].Cash} money");
                 customers[i].CreatProductList(products);
             }
 
-            foreach (Cashbox cashbox in cashboxes)
+            CreateTasks(customers ,numberCustomers);
+
+            foreach (var customer in customers)
             {
-                Thread cashboxThread = new Thread(cashbox.QueueLength);
-                cashboxThread.Start();
+                Random random = new();
+                int delay = random.Next(100, 1000);
+                Thread.Sleep(delay);
+                Cashbox leastBusyCash = cashboxes.Where(x => x.IsWorking).OrderBy(x => x.QueueLength()).First();
+                leastBusyCash.TakeQueue(customer);
             }
+
+            CreateTasks(cashboxes, numberCashboxes, out Task[] cashboxTasks);
+
+            Task.WaitAll(cashboxTasks);
+        }
+
+        private void CreateTasks(List<Customer> customers, int numberTasks)
+        {
+            Task[] tasks = new Task[numberTasks];
+            int taskIndex = 0;
+
+            Console.WriteLine();
 
             foreach (Customer customer in customers)
             {
-                Thread customerThread = new Thread(customer.BuyProducts);
-                customerThread.Start();
+                tasks[taskIndex] = Task.Factory.StartNew(() => customer.BuyProducts());
+                taskIndex++;
+            }
+        }
+
+        private void CreateTasks(List<Cashbox> cashboxes, int numberTasks, out Task[] tasks)
+        {
+            tasks = new Task[numberTasks];
+            int taskIndex = 0;
+
+            foreach (Cashbox cashbox in cashboxes)
+            {
+                tasks[taskIndex] = Task.Factory.StartNew(() => cashbox.GetMoney());
+                taskIndex++;
             }
         }
     }

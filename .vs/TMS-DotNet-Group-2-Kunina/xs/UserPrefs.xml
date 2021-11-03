@@ -14,9 +14,7 @@
           <Node name="TMS-DotNet-Group-2-Kunina" expanded="True">
             <Node name="TMS-DotNet-Group-2-Kunina.Homework8.Logic" expanded="True">
               <Node name="Interfaces" expanded="True" />
-              <Node name="Managers" expanded="True">
-                <Node name="ShopManager.cs" selected="True" />
-              </Node>
+              <Node name="Managers" expanded="True" />
               <Node name="Models" expanded="True" />
             </Node>
             <Node name="TMS-DotNet-Group-2-Kunina.Homework8.UI" expanded="True" />

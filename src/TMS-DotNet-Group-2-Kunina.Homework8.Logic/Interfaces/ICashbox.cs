@@ -6,7 +6,11 @@
 
         public bool IsWorking { get; set; }
 
-        public void QueueLength();
+        public int QueueLength();
+
+        public void TakeQueue(ICustomer customer);
+
+        public void GetMoney();
     }
 }
 
