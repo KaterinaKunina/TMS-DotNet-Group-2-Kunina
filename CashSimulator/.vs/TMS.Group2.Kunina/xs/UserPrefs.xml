@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{9EC2617A-2DF9-46BC-9138-607A5D163975}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Manager/Programm.cs">
+    <Files>
+      <File FileName="Program.cs" Line="70" Column="62" />
+      <File FileName="Customer.cs" Line="40" Column="10" />
+      <File FileName="Basket.cs" Line="9" Column="48" />
+      <File FileName="Product.cs" Line="64" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TMS.Group2.Kunina" expanded="True">
+            <Node name="CashSimulator" expanded="True">
+              <Node name="Logic" expanded="True" />
+              <Node name="Manager" expanded="True">
+                <Node name="Programm.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>j</Value>
+          <Value>queueCash[i].Count</Value>
+          <Value>queueCash</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../Manager/Programm.cs" line="98" column="25" endLine="98" endColumn="34" offsetX="-1" offsetY="-1" expression="cashTasks[0].Status" liveUpdate="False" />
+    <Watch file="../../../Manager/Programm.cs" line="98" column="25" endLine="98" endColumn="34" offsetX="-1" offsetY="-1" expression="cashTasks" liveUpdate="False" />
+    <Watch file="../../../Manager/Programm.cs" line="98" column="25" endLine="98" endColumn="34" offsetX="-1" offsetY="-1" expression="cashTasks" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.CashSimulator PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

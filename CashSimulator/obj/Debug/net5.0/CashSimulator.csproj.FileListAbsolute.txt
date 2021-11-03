@@ -1,0 +1,14 @@
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/bin/Debug/net5.0/CashSimulator.deps.json
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/bin/Debug/net5.0/CashSimulator.runtimeconfig.json
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/bin/Debug/net5.0/CashSimulator.runtimeconfig.dev.json
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/bin/Debug/net5.0/CashSimulator.dll
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/bin/Debug/net5.0/ref/CashSimulator.dll
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/bin/Debug/net5.0/CashSimulator.pdb
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/obj/Debug/net5.0/CashSimulator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/obj/Debug/net5.0/CashSimulator.AssemblyInfoInputs.cache
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/obj/Debug/net5.0/CashSimulator.AssemblyInfo.cs
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/obj/Debug/net5.0/CashSimulator.csproj.CoreCompileInputs.cache
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/obj/Debug/net5.0/CashSimulator.dll
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/obj/Debug/net5.0/ref/CashSimulator.dll
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/obj/Debug/net5.0/CashSimulator.pdb
+/Users/kate/Git/TMS-DotNet-Group-2-Kunina/CashSimulator/obj/Debug/net5.0/CashSimulator.genruntimeconfig.cache
