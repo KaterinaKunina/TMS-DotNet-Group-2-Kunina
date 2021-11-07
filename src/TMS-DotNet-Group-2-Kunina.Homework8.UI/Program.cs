@@ -16,8 +16,8 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.UI
             Console.WriteLine("Input the number of customers");
             CheckInputValue(out int numberCustomers);
 
-            ShopManager<Cashbox, Customer> shopManager = new ShopManager<Cashbox, Customer>();
-            shopManager.Run(numberCustomers, numberCashDesks);
+            ShopManagerDmitry<Cashbox, Customer> shopManagerDmitry = new();
+            shopManagerDmitry.Run(numberCustomers, numberCashDesks);
 
             ShopManagerKate shopManagerKate = new();
             shopManagerKate.Run();
