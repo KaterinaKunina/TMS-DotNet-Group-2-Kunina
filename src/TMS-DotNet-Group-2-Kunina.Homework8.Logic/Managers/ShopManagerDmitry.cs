@@ -9,15 +9,15 @@ using System.Linq;
 
 namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Managers
 {
-    public class ShopManager<Cashbox, Customer>
+    public class ShopManagerDmitry<Cashbox, Customer>
         where Cashbox : ICashbox, new()
-        where Customer : ICustomer, new()    
+        where Customer : ICustomer, new()
     {
         public static Dictionary<Products, Product> products = new Dictionary<Products, Product>();
         private List<Customer> customers = new List<Customer>();
         private List<Cashbox> cashboxes = new List<Cashbox>();
 
-        public ShopManager()
+        public ShopManagerDmitry()
         {
             products.Add(Products.cheese, new Product(Products.cheese, 65.0M, Priorities.high));
             products.Add(Products.bread, new Product(Products.bread, 30.0M, Priorities.high));
@@ -84,6 +84,18 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Managers
             Task.WaitAll(cashboxTasks);
         }
 
+        private void CreateTasks(List<Cashbox> cashboxes, int numberTasks, out Task[] tasks)
+        {
+            tasks = new Task[numberTasks];
+            int taskIndex = 0;
+
+            foreach (Cashbox cashbox in cashboxes)
+            {
+                tasks[taskIndex] = Task.Factory.StartNew(() => cashbox.GetMoney());
+                taskIndex++;
+            }
+        }
+
         private void CreateTasks(List<Customer> customers, int numberTasks)
         {
             Task[] tasks = new Task[numberTasks];
@@ -94,18 +106,6 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Managers
             foreach (Customer customer in customers)
             {
                 tasks[taskIndex] = Task.Factory.StartNew(() => customer.BuyProducts());
-                taskIndex++;
-            }
-        }
-
-        private void CreateTasks(List<Cashbox> cashboxes, int numberTasks, out Task[] tasks)
-        {
-            tasks = new Task[numberTasks];
-            int taskIndex = 0;
-
-            foreach (Cashbox cashbox in cashboxes)
-            {
-                tasks[taskIndex] = Task.Factory.StartNew(() => cashbox.GetMoney());
                 taskIndex++;
             }
         }
