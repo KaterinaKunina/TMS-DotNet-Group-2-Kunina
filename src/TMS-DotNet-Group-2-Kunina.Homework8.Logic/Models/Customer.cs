@@ -46,7 +46,7 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Models
             {
                 if (costProducts + product.Price <= Cash)
                 {
-                    Console.WriteLine($"Customer {CustomerID}. Buy product - {product.Name}, {product.Price}, {product.Priority}");
+                    Console.WriteLine($"The customer {CustomerID}. Buy product - {product.Name}, {product.Price}, {product.Priority}");
                     _cart.Add(product);
                     costProducts += product.Price;
                 }

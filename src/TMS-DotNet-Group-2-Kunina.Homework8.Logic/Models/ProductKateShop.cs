@@ -53,6 +53,7 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Models
                 new ProductKateShop() { Id = 19, ProductName = "buckwheat", price = 1.9 },
                 new ProductKateShop() { Id = 20, ProductName = "oatmeal", price = 1.15 },
             };
+
             return products;
         }
 

@@ -39,7 +39,6 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Models
             return basket.Sum(v => v.Value.Price) <= wallet;
         }
 
-
         public Dictionary<int, ProductKateShop> RemoveProductFromBasket()
         {
             if (!CheckEnoughMoneyToPay())
@@ -56,6 +55,7 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Models
                     }
                 }
             }
+
             return basket;
         }
 
@@ -75,6 +75,7 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Models
             //RemoveProductFromBasket();
             wallet -= basket.Sum(v => v.Value.Price);
             Console.WriteLine("Customer id = {0} and  Wallet after shop = {1} Сheckout number {2}", id, wallet, threadId);
+
             return wallet;
         }
 

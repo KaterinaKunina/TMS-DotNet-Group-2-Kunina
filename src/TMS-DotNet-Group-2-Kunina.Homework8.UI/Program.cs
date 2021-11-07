@@ -9,6 +9,26 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.UI
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Select a store to shop:\nDmitry shop\nKate shop");
+            string inputUser = Console.ReadLine().ToUpperInvariant();
+
+            if(inputUser == "DMITRY" || inputUser == "DMITRY SHOP")
+            {
+                DmitryShop();
+            }
+            else if (inputUser == "KATE" || inputUser == "KATE SHOP")
+            {
+                KateShop();
+            }
+            else
+            {
+                Console.WriteLine("Incorrect value. Try again");
+                Console.ReadKey();
+            }
+        }
+
+        private static void DmitryShop()
+        {
             Console.WriteLine("Hello! Welcome to our mall");
             Console.WriteLine("Input the number of cash desks that work");
             CheckInputValue(out int numberCashDesks);
@@ -18,7 +38,10 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.UI
 
             ShopManagerDmitry<Cashbox, Customer> shopManagerDmitry = new();
             shopManagerDmitry.Run(numberCustomers, numberCashDesks);
+        }
 
+        private static void KateShop()
+        {
             ShopManagerKate shopManagerKate = new();
             shopManagerKate.Run();
         }

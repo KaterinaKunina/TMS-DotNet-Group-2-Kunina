@@ -63,7 +63,6 @@ namespace TMS_DotNet_Group_2_Kunina.Homework8.Logic.Models
                 }
             }
         }
-
     }
 }
 
