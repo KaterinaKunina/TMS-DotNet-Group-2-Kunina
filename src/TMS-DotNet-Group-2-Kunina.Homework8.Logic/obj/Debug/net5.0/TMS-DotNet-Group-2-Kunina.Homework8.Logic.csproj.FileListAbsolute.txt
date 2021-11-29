@@ -1,0 +1,15 @@
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/obj/Debug/net5.0/TMS-DotNet-Group-2-Kunina.Homework8.Logic.csproj.AssemblyReference.cache
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/obj/Debug/net5.0/TMS-DotNet-Group-2-Kunina.Homework8.Logic.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/obj/Debug/net5.0/TMS-DotNet-Group-2-Kunina.Homework8.Logic.AssemblyInfoInputs.cache
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/obj/Debug/net5.0/TMS-DotNet-Group-2-Kunina.Homework8.Logic.AssemblyInfo.cs
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/obj/Debug/net5.0/TMS-DotNet-Group-2-Kunina.Homework8.Logic.csproj.CoreCompileInputs.cache
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/bin/Debug/net5.0/TMS-DotNet-Group-2-Kunina.Homework8.Logic.deps.json
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/bin/Debug/net5.0/TMS-DotNet-Group-2-Kunina.Homework8.Logic.dll
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/bin/Debug/net5.0/ref/TMS-DotNet-Group-2-Kunina.Homework8.Logic.dll
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/bin/Debug/net5.0/TMS-DotNet-Group-2-Kunina.Homework8.Logic.pdb
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/bin/Debug/net5.0/TMS-DotNet-Group-2-Kunina.Homework8.Data.dll
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/bin/Debug/net5.0/TMS-DotNet-Group-2-Kunina.Homework8.Data.pdb
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/obj/Debug/net5.0/TMS-DotNet-Group-2-Kunina.Homework8.Logic.csproj.CopyComplete
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/obj/Debug/net5.0/TMS-DotNet-Group-2-Kunina.Homework8.Logic.dll
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/obj/Debug/net5.0/ref/TMS-DotNet-Group-2-Kunina.Homework8.Logic.dll
+/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/obj/Debug/net5.0/TMS-DotNet-Group-2-Kunina.Homework8.Logic.pdb

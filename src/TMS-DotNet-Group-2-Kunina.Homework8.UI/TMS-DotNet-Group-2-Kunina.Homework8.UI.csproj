@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>TMS_DotNet_Group_2_Kunina.Homework8.UI</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TMS-DotNet-Group-2-Kunina.Homework8.Logic\TMS-DotNet-Group-2-Kunina.Homework8.Logic.csproj" />
+    <ProjectReference Include="..\TMS-DotNet-Group-2-Kunina.Homework8.Data\TMS-DotNet-Group-2-Kunina.Homework8.Data.csproj" />
+  </ItemGroup>
+</Project>

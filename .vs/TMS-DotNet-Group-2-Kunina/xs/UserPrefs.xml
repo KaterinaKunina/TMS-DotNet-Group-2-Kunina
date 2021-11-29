@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{D2AA69E0-76AE-4FA7-ACCC-D3D5E9FB7707}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/TMS-DotNet-Group-2-Kunina.Homework8.UI/Program.cs">
+    <Files>
+      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.UI/Program.cs" Line="22" Column="43" />
+      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Models/Cashbox.cs" Line="54" Column="22" />
+      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Managers/ShopManagerDmitry.cs" Line="26" Column="33" />
+      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Managers/ShopManagerKate.cs" Line="17" Column="1" />
+      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Models/ProductKateShop.cs" Line="54" Column="36" />
+      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Models/Product.cs" Line="1" Column="1" />
+      <File FileName="src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/Models/CustomerKateShop.cs" Line="7" Column="34" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TMS-DotNet-Group-2-Kunina" expanded="True">
+            <Node name="TMS-DotNet-Group-2-Kunina.Homework8.Data" expanded="True" selected="True">
+              <Node name="Enums" expanded="True" />
+            </Node>
+            <Node name="TMS-DotNet-Group-2-Kunina.Homework8.Logic" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Managers" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="TMS-DotNet-Group-2-Kunina.Homework8.UI" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TMS-DotNet-Group-2-Kunina.Homework8.UI PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

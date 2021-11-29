@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/TMS-DotNet-Group-2-Kunina.Homework8.Logic.csproj": {}
+  },
+  "projects": {
+    "/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Data/TMS-DotNet-Group-2-Kunina.Homework8.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Data/TMS-DotNet-Group-2-Kunina.Homework8.Data.csproj",
+        "projectName": "TMS-DotNet-Group-2-Kunina.Homework8.Data",
+        "projectPath": "/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Data/TMS-DotNet-Group-2-Kunina.Homework8.Data.csproj",
+        "packagesPath": "/Users/dmitrijnaumenko/.nuget/packages/",
+        "outputPath": "/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dmitrijnaumenko/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-rc.1.21463.6/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/TMS-DotNet-Group-2-Kunina.Homework8.Logic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/TMS-DotNet-Group-2-Kunina.Homework8.Logic.csproj",
+        "projectName": "TMS-DotNet-Group-2-Kunina.Homework8.Logic",
+        "projectPath": "/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/TMS-DotNet-Group-2-Kunina.Homework8.Logic.csproj",
+        "packagesPath": "/Users/dmitrijnaumenko/.nuget/packages/",
+        "outputPath": "/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Logic/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dmitrijnaumenko/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Data/TMS-DotNet-Group-2-Kunina.Homework8.Data.csproj": {
+                "projectPath": "/Users/dmitrijnaumenko/Projects/TMS-DotNet-Group-2-Kunina/src/TMS-DotNet-Group-2-Kunina.Homework8.Data/TMS-DotNet-Group-2-Kunina.Homework8.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-rc.1.21463.6/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
